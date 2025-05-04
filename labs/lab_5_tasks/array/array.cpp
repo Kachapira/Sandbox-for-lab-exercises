@@ -1,4 +1,4 @@
-//program printts values from an array
+//program prints values from an array
 #include <iostream>
 #include <string> //for output of strings
 using namespace std;
