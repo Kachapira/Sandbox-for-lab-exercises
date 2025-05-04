@@ -3,10 +3,12 @@
 #include <cstdlib> //for rand and srand function
 using namespace std;
 //main function
-int main(){
+int main()
+{
     int Days_until_expiration = rand() % 10; //generates random numbers
     //now we sue 'switch statements' instead of 'if-statements'
-    switch (Days_until_expiration){
+    switch (Days_until_expiration)
+    {
         case 0:
             cout << "Your subscription has expired." << endl;
             break;
@@ -32,4 +34,5 @@ int main(){
     }
     return 0;
 }
-//using the break statements in this format allows use of multiple cases to produce one outcome
+/*using the break statements in this format allows use of multiple cases to produce one outcome
+Unfortunately, code has higher affinity for '3'*/
