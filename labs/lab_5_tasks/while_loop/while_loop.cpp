@@ -1,28 +1,38 @@
-//program uses while loops
-#include <string>
+//program dwells on 'while-loops'
 #include <iostream>
 using namespace std;
-
 //main function
 int main()
 {
-
-    cout << "Dear user, please input a value between (5 - 10): " << endl;
-    int value;
-    cin >> value;
-
-    //will also use an array for assistance
-    int variable [6]
-    while(value >= 5 && value <= 10)
+    //initializing a boolean var.
+    bool value = false;
+    
+    //we also declare input in advance to avoid out-of-scope error
+    int input;
+    
+    //using while-function
+    while(!value)
     {
-
-        //using if-statements for output
-        if(value < 5 && value > 10)
+        cout << "Enter integer value between 5 and 10: " << endl;
+        cin >> input;
+        
+        //using an if function
+        if(!input)
         {
-            cout << "You entered " << value << ". please enter a number between 5 & 10:"  << endl;
-            int value;
-            cin >> value;
+            cout << "Sorry, you entered an invalid number, please try again: " << endl;
+            break;
+            cout << "Enter integer value between 5 and 10: " << endl;
+        }
+        else if(input < 5 && input > 10)
+        {
+            cout << "You entered " << input << " . Please enter a number between 5 and 10: " << endl;
+        }
+        //now for a valid input
+        else if(input >= 5 && input <= 10)
+        {
+            cout << "Your input (" << input << ") has been accepted." << endl;
+            break;
         }
     }
-    
+    return 0;
 }
