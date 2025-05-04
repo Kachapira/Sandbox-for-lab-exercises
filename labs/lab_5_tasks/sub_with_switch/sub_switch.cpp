@@ -32,3 +32,4 @@ int main(){
     }
     return 0;
 }
+//using the break statements in this format allows use of multiple cases to produce one outcome
