@@ -2,11 +2,13 @@
 #include <iostream> //for i/o operations
 using namespace std;
 //main function
-int main(){
+int main()
+{
     int days_until_expiration = rand() % 10; //function generates random numbers
     
     //now we use if-statements
-    if(days_until_expiration == 0){
+    if(days_until_expiration == 0)
+    {
         cout << "Your subscription has expired." << endl;
     }else if(days_until_expiration == 1){
         cout << "Your subscription expires within a day.\nRenew now and save 20%" << endl;
